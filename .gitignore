@@ -15,3 +15,7 @@ data/processed/*.csv
 .DS_Store
 .vscode/
 .idea/
+
+# Generated map (large embedded JSON, regenerate with make_map.py)
+map.html
+.env
