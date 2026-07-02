@@ -1,0 +1,21 @@
+[
+  {"type": "way", "id": 1, "center": {"lat": 25.081, "lon": 55.141}, "tags": {"building": "apartments", "name": "Le Reve Tower", "building:flats": "80", "building:levels": "50", "height": "214"}},
+  {"type": "way", "id": 2, "center": {"lat": 25.082, "lon": 55.142}, "tags": {"building": "apartments", "name": "Al Seef Tower", "building:flats": "159"}},
+  {"type": "way", "id": 3, "center": {"lat": 25.083, "lon": 55.143}, "tags": {"building": "apartments", "name": "Emirates Crown", "building:flats": "252", "building:levels": "64", "height": "296"}},
+  {"type": "way", "id": 4, "center": {"lat": 25.084, "lon": 55.144}, "tags": {"building": "apartments", "name": "Ocean Heights", "building:flats": "519", "building:levels": "82", "height": "310"}},
+  {"type": "way", "id": 5, "center": {"lat": 25.085, "lon": 55.145}, "tags": {"building": "apartments", "name": "Cayan Tower", "building:flats": "503", "building:levels": "76", "height": "306.4"}},
+  {"type": "way", "id": 6, "center": {"lat": 25.086, "lon": 55.146}, "tags": {"building": "apartments", "name": "Marina Gate 3", "building:flats": "389", "building:levels": "56", "height": "224"}},
+  {"type": "way", "id": 7, "center": {"lat": 25.087, "lon": 55.147}, "tags": {"building": "apartments", "name": "Marina Heights", "building:flats": "380", "building:levels": "54", "height": "208"}},
+  {"type": "way", "id": 8, "center": {"lat": 25.088, "lon": 55.148}, "tags": {"building": "apartments", "name": "La Vie Residences", "building:flats": "267", "building:levels": "36", "height": "138", "addr:city": "Dubai"}},
+  {"type": "way", "id": 9, "center": {"lat": 25.089, "lon": 55.149}, "tags": {"building": "apartments", "name": "DAMAC Heights", "building:flats": "640", "building:levels": "86", "height": "335"}},
+  {"type": "way", "id": 10, "center": {"lat": 25.090, "lon": 55.150}, "tags": {"building": "apartments", "name": "Princess Tower", "building:flats": "763", "building:levels": "101", "height": "357"}},
+  {"type": "way", "id": 11, "center": {"lat": 25.091, "lon": 55.151}, "tags": {"building": "apartments", "name": "Marina Gate 1", "building:flats": "415", "building:levels": "52", "height": "206"}},
+  {"type": "way", "id": 12, "center": {"lat": 25.092, "lon": 55.152}, "tags": {"building": "apartments", "name": "Elite Residence", "building:flats": "695", "building:levels": "87", "height": "360"}},
+  {"type": "way", "id": 13, "center": {"lat": 25.093, "lon": 55.153}, "tags": {"building": "apartments", "name": "Marina Gate 2", "building:flats": "535", "building:levels": "66", "height": "256"}},
+  {"type": "way", "id": 14, "center": {"lat": 25.094, "lon": 55.154}, "tags": {"building": "apartments", "name": "Marina Crown", "building:flats": "612", "building:levels": "53", "height": "207"}},
+  {"type": "way", "id": 15, "center": {"lat": 25.095, "lon": 55.155}, "tags": {"building": "apartments", "name": "The Torch", "building:flats": "682", "building:levels": "5", "height": "15"}},
+  {"type": "way", "id": 16, "center": {"lat": 25.096, "lon": 55.156}, "tags": {"building": "apartments", "name": "Marina Pinnacle", "building:flats": "748", "building:levels": "4"}},
+  {"type": "way", "id": 17, "center": {"lat": 25.097, "lon": 55.157}, "tags": {"building": "apartments", "building:flats": "702", "building:levels": "3"}},
+  {"type": "way", "id": 18, "center": {"lat": 25.098, "lon": 55.158}, "tags": {"building": "residential", "building:levels": "12"}},
+  {"type": "way", "id": 19, "center": {"lat": 25.099, "lon": 55.159}, "tags": {"building": "apartments"}}
+]
