@@ -68,13 +68,34 @@ running a full collection first.
 
 ## Known limitations
 
-- Apartment-count estimates for buildings without `building:flats` use a
-  single coefficient calibrated on Marina's high-rise towers. This likely
-  introduces systematic error for mid-rise/low-rise districts (e.g. JVC, Al
-  Nahda) — per-district-type calibration is a planned improvement.
+- **Tag coverage is much worse than Dubai Marina suggested.** A full-city
+  run (11,395 buildings) found only 27 buildings (0.2%) with consistent
+  `flats`+`levels` tags, and 6,649 (58%) with neither tag at all. Marina's
+  ~13% `flats` coverage was not representative — it's a showcase district
+  that got careful manual tagging (most towers even have a `wikidata`
+  link), unlike the rest of the city.
+- **The footprint-area calibration is itself skewed toward luxury
+  high-rises.** The only buildings with a trustworthy `flats` count to
+  calibrate against are, again, mostly Marina/Downtown towers — the
+  resulting "sqm of floor area per apartment" coefficient (~225 sqm,
+  observed range 146-971) reflects large luxury units. Applying it
+  city-wide likely **undercounts** apartments in non-luxury districts
+  (Deira, Al Nahda, International City, etc.), where real units are
+  considerably smaller. Stratifying calibration by building class or
+  district before trusting `medium`-confidence estimates in those areas is
+  a planned improvement — for now, treat `medium` estimates outside
+  Marina/Downtown/JBR as a floor, not a point estimate.
+- **58% of buildings have no size signal at all** (no `building:levels`,
+  so footprint area alone can't be turned into a floor count) and are
+  excluded from any estimate. This is a hard ceiling for a
+  tags-plus-geometry-only approach; closing this gap would need either a
+  district-level default level count or a different data source entirely.
 - A full collection run against the public Overpass API can take anywhere
   from ~30 minutes to a few hours depending on server load and the
-  `--sleep` setting.
+  `--sleep` setting — this is why the project switched to offline
+  extraction from a local Geofabrik `.osm.pbf` file (see
+  `extract_from_pbf.py`), which has no rate limits and finishes in
+  seconds.
 - This is a discovery/exploration tool built on crowd-sourced OSM data, not
   a substitute for ground-truth foot traffic measurement or negotiation
   with building management.
