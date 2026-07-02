@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Collected data — large and regeneratable, don't commit
+data/raw/
+data/processed/*.json
+data/processed/*.csv
+!data/sample/
+
+# Editor/OS junk
+.DS_Store
+.vscode/
+.idea/
